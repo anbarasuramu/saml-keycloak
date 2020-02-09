@@ -1,0 +1,34 @@
+<keycloak-saml-adapter>
+    <SP entityID="myapp"
+        sslPolicy="EXTERNAL"
+        logoutPage="/index.jsp">
+        <Keys>
+            <Key signing="true">
+                <PrivateKeyPem>
+                    MIIEpAIBAAKCAQEAvFUDrd9ZgAaHz2KW9MW0w78iDFUty7EkQ5gcs29z2x1TaPWErjCFgkgI73xo+qtS5kTbkUT038tHOMwaHB1shuma/fo7La1gOvgcz26RWhFjAqgQfhYarmXo3O7wXUVK9u8vwvGr9fXl5am+Yu2qRj29cbFSji54OqA/C83+3cFmZ5KHGC/0s7q6mI02+A+pO73dtrs8nHpZx1/ugbaUTvNX/lNIr+ZEz3Lr8Zs07KHIUD3brgA1/oJj741Sa1fGfXV/LqVMYXx3z9KitzrylSGfJ2TBzwT8pUproiYDpuZfDXHKSLR8D15rNDdr8iHDfiPorbvJF+dH8hPtCej9XwIDAQABAoIBAQCc0cGFh4R0CXwO4M5INVRm5oGIeWjvwqoqqr/DXhu/qXSp4j6/+OFC8Y6XNCYKDJyz50RZe2zX6OF+Vt2q6YlT8bNAppueVk7Z63258BySPgYO0TkidG91JqC3TzLQx4E7i0Fe93O0FDSBf01r/PCbGo/j2r6ea+1rC8JTpw0BQrcGa/XEI85UDplepS2twW5Pz9AoeZh/OgN4gN70fZFkrbP3MR4V2dxThI34pNlUhemqOcrEsa2paaOnYnPASz9/4t1q35JcmUPQJ6GOwQhhB2gVTjJOkGhNMTrA0u9V98dE4LVBOhY5gDg2ecmekSuT91nqLO46HNbOM8Ceu4g5AoGBAP1ArY8kkPA964G8F1Y+NeK153ufZG5AJdCg5OKywzqwkqlThpaEmL98nOPUGlGVUYXJ7+MinAVoMeSTgJ9/ZC0ZWvenWhxLtSDVpNwhY9Gf0RGxQthBeP3ZgRuYNU/bOIy9Q+S7Q5CaQ43a+24OYJbbq0oU4nl3c/adLIPbMDAVAoGBAL5gCroEz733ldyRDXTQ6p78GbN8WFhMtzl/QQ1Zn3C1EES8tIylGCdSINWSb4HsVfCgSWDXGq2Sm2aLGLUkS/stWNOGsEfdF708xHTUwU4RZGGpYvKGA6SzMDG4QnfUS8tgaliWvygKa/YvVBNaydj7TrugxxHsjfC2e03xiOCjAoGARftfepTCMIEL2TfewwhB37ogk3rCR+0WBgbP+Q0pAcjVXlEkeed+RjvrJtHvy+eVNYFN9tgTgTL/xog0HN8ZEZVWG+V08yjAjqg6/FGFweGF5nuzWwsMoik+kh+Ha9/KSqnqXwSYcRcP391JaWozqrxdIwWOZ75onxdju7QQJtkCgYBGdEjD+w/e4AfoLw5p0v9hgy8Hy9buJsYQU1YB2M826OtyZNv0yQydULmyEJWP4aUUfl1pp3HKFt3IH2Yvc5VjCa876TbIAbzNXfXevvYjLDCYLBXgZ1Rl2aLWY7jFnB3I0I/K5U8tRF4cJ/vXhdv5n1fN/Hxv17nYAdC0UdU0PQKBgQCAz/00GPVYXKckS0IZcBB3uyaeTAsGmXP5v3HeJPybLu8csd76WsJobaD9KySJnZUBacR90Kqtsd/XKT5NCz8Gr3MfvlIBmmKcw5/EjO6ijr+4dioHLdAus7/657xwHujTCAhODcjMaivpOu0QWxSfR4S1FstDFTO7ePN8Q902+A==
+                </PrivateKeyPem>
+                <CertificatePem>
+                    MIICrzCCAZcCBgFwJXSyJDANBgkqhkiG9w0BAQsFADAbMRkwFwYDVQQDDBBhcHAtcHJvZmlsZS1zYW1sMB4XDTIwMDIwODE1Mzc0OVoXDTMwMDIwODE1MzkyOVowGzEZMBcGA1UEAwwQYXBwLXByb2ZpbGUtc2FtbDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALxVA63fWYAGh89ilvTFtMO/IgxVLcuxJEOYHLNvc9sdU2j1hK4whYJICO98aPqrUuZE25FE9N/LRzjMGhwdbIbpmv36Oy2tYDr4HM9ukVoRYwKoEH4WGq5l6Nzu8F1FSvbvL8Lxq/X15eWpvmLtqkY9vXGxUo4ueDqgPwvN/t3BZmeShxgv9LO6upiNNvgPqTu93ba7PJx6Wcdf7oG2lE7zV/5TSK/mRM9y6/GbNOyhyFA9264ANf6CY++NUmtXxn11fy6lTGF8d8/Sorc68pUhnydkwc8E/KVKa6ImA6bmXw1xyki0fA9eazQ3a/Ihw34j6K27yRfnR/IT7Qno/V8CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAEZn2QeEQ/D/C9zHr+FBZ61V/5/4/NTAmaeOMZyuomS73RBVh0KSXpldLeutuuoqcxpIN0gUgkUwfs5nnKOSdFRXToz7nsQf9D57+ZZG2LlSNTxAqc4WEJYCiq8o0YDMPxBy4taac9NCYJfBkF8jwthT/gDEd74evQ979NwXed1b5BnhA1GkGS7j1UQ7B8r0r8CE5uR2b3rdimlm2JwS5VzsHCqCZ70xiCMJhCL7LTuRFCR9+jFTw8Qh5W/HOp8jKy3X/i7mhS6wCnVBsRJW6rG7wapSx7N/zIQq0TZufS869qfjeNOEJTphqmVkz8tR8XMhSy5+go1Avr8S12KVEkQ==
+                </CertificatePem>
+            </Key>
+        </Keys>
+        <IDP entityID="idp"
+             signatureAlgorithm="RSA_SHA256"
+             signatureCanonicalizationMethod="http://www.w3.org/2001/10/xml-exc-c14n#">
+            <SingleSignOnService signRequest="true"
+                                 validateResponseSignature="true"
+                                 validateAssertionSignature="false"
+                                 requestBinding="POST"
+                                 bindingUrl="http://localhost:8090/auth/realms/master/protocol/saml"/>
+            <SingleLogoutService signRequest="true"
+                                 signResponse="true"
+                                 validateRequestSignature="true"
+                                 validateResponseSignature="true"
+                                 requestBinding="POST"
+                                 responseBinding="POST"
+                                 postBindingUrl="http://localhost:8090/auth/realms/master/protocol/saml"
+                                 redirectBindingUrl="http://localhost:8090/auth/realms/master/protocol/saml"/>
+        </IDP>
+    </SP>
+</keycloak-saml-adapter>
+
