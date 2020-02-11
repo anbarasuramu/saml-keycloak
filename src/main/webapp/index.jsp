@@ -9,20 +9,6 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css"/>
     </head>
     <body>
-        <jsp:useBean id="controller" class="com.keycloak.Controller" scope="request"/>
+    <c:redirect url="jsp/profile.jsp"/>
         
-        <c:set var="isLoggedIn" value="<%=controller.isLoggedIn(request)%>"/>
-        <c:if test="${isLoggedIn}">
-            <c:redirect url="jsp/profile.jsp"/>
-        </c:if>
-
-        <div class="wrapper" id="welcome">
-            <div class="menu">
-                <button name="loginBtn" onclick="location.href = 'jsp/profile.jsp'" type="button">Login</button>
-            </div>
-
-            <div class="content">
-                <div class="message">Please login</div>
-            </div>
-        </div>
     </body>

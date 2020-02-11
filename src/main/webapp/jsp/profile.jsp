@@ -9,7 +9,7 @@
     </head>
     <body>
         <jsp:useBean id="controller" class="com.keycloak.Controller" scope="request"/>
-        <c:set var="req" value="<%=request%>"/>
+        <c:set var="req" value="<%=request%>" scope="request"/>
 
         <div class="wrapper" id="profile">
             <div class="menu">
@@ -23,18 +23,7 @@
                             <td class="label">First name</td>
                             <td><span id="firstName">${controller.getFirstName(req)}</span></td>
                         </tr>
-                        <tr class="even">
-                            <td class="label">Last name</td>
-                            <td><span id="lastName">${controller.getLastName(req)}</span></td>
-                        </tr>
-                        <tr>
-                            <td class="label">Username</td>
-                            <td><span id="username">${controller.getUsername(req)}</span></td>
-                        </tr>
-                        <tr class="even">
-                            <td class="label">Email</td>
-                            <td><span id="email">${controller.getEmail(req)}</span></td>
-                        </tr>
+                        
                     </table>
                 </div>
             </div>
