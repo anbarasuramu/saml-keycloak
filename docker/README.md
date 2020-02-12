@@ -27,19 +27,10 @@ Or build `anbarasu\saml-app` from source:
 
 #### Run the container
 
-#### Run the container with your custom variables as JAVA_OPTS environment variables
 
-Run the image, binding associated ports, and defining your custom variables as environment variables:
+#### Or Run the container mounting your custom keycloak-saml.xml
 
-    docker run -d \
-	    -p 8080:8080 \
-             anbarasu/saml-app
-	   
-
-
-#### Or Run the container mounting your custom onelogin.saml.properties
-
-Run the image, binding associated ports, and mounting your custom onelogin.saml.properties:
+Run the image, binding associated ports, and mounting your custom keycloak-saml.xml:
 
     docker run -d \
       -p 8080:8080 \
