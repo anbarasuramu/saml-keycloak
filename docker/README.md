@@ -28,7 +28,7 @@ Or build `anbarasu\saml-app` from source:
 #### Run the container
 
 
-#### Or Run the container mounting your custom keycloak-saml.xml
+####  Run the container mounting your custom keycloak-saml.xml
 
 Run the image, binding associated ports, and mounting your custom keycloak-saml.xml:
 
