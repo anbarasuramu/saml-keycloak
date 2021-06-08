@@ -9,7 +9,7 @@
 	<name>saml-app</name>
 
 	<properties>
-		<version.keycloak>6.0.1</version.keycloak>
+		<version.keycloak>13.0.0</version.keycloak>
 
 	</properties>
 
